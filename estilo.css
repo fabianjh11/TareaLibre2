@@ -1,0 +1,100 @@
+:root
+{
+	--beige: #d4c48c;
+	--green: #580;
+	--orange: #a70;
+}
+*
+{
+	font-family: 'Montserrat', sans-serif;
+	background: #340;
+	margin: 0px;
+}
+Body
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+#Board, .BoardInfo
+{
+	max-width: 500px;
+}
+
+#Board
+{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	margin: 10px;
+}
+
+#Play, .BoardInfo
+{
+	font-size: 30px;
+	font-weight: bolder;
+	color: var(--beige);
+}
+
+#GameOver
+{
+	display: none;
+	font-size: 30px;
+	font-weight: bold;
+	color: #eee;
+	margin: 10px;
+}
+.BoardInfo
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+#Play
+{
+	background: var(--orange);
+	border: none;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+#Play:Hover
+{
+	cursor: pointer;
+	background: var(--green);
+	transition: all 0.25s;
+}
+#ScoreBoard
+{
+	display: inline-flex;
+}
+.Cell
+{
+	aspect-ratio: 1;
+	margin: 0.5px;
+}
+.EmptyCell
+{
+	background: var(--beige);
+}
+.SnakeCell
+{
+	background: var(--green);
+}
+.ItemCell
+{
+	background: var(--orange);
+}
+
+.Bottom
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--beige);
+	margin: 10px;
+}
+.Bottom a
+{
+	color: var(--orange);
+}
